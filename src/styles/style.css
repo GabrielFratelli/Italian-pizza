@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --background: #fff;
+  --black: #000;
+  --yellow: #fea700;
+  --grey: rgba(196, 196, 196, 0.5);
+  --black-title: rgba(0, 0, 0, 1);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--background);
+}
+
+div.container {
+  height: 100vh;
+  padding: 40px;
+}
+
+div.container div.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div.container div.header a.logo {
+  text-decoration: none;
+  font-family: "Quando", serif;
+  line-height: 51px;
+  font-size: 32px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.377);
+  color: var(--black);
+  -webkit-transition: all 0.8;
+  transition: all 0.8;
+  cursor: pointer;
+}
+
+div.container div.header a.logo:hover {
+  opacity: 0.8;
+}
+
+div.container div.header div.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  margin-right: 20px;
+  font-size: 30px;
+  width: 35vw;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.377);
+  color: var(--black);
+  -webkit-transition: all 0.8;
+  transition: all 0.8;
+}
+
+div.container div.header div.top:hover {
+  opacity: 0.8;
+}
+
+div.container div.header div.top p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 24px;
+  cursor: pointer;
+}
+
+div.container div.header div.top p a {
+  color: var(--black);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+div.container div.header .icons-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 10vw;
+  height: 10vh;
+  -webkit-transition: all 0.8;
+  transition: all 0.8;
+}
+
+div.container div.header .icons-header:hover {
+  opacity: 0.8;
+}
+
+div.container div.header .icons-header img.icons-search {
+  width: 30px;
+  height: 40px;
+  cursor: pointer;
+}
+
+div.container div.header .icons-header img.icons-lupa {
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+}
+
+div.container div.header button.login {
+  width: 170.28px;
+  height: 65.75px;
+  font-size: 30px;
+  border: 0px solid;
+  border-radius: 14px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.377);
+  -webkit-box-shadow: 0px 5.8125px 5.8125px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 5.8125px 5.8125px rgba(0, 0, 0, 0.35);
+  background: var(--yellow);
+  color: var(--background);
+  -webkit-transition: all 0.8;
+  transition: all 0.8;
+  cursor: pointer;
+}
+
+div.container div.header button.login:hover {
+  opacity: 0.8;
+}
+
+div.container div.container-principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.container div.container-principal div.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 40vw;
+  height: 560vh;
+  padding-left: 90px;
+  margin-top: 110px;
+}
+
+div.container div.container-principal div.menu div.title {
+  font-size: 50px;
+  color: var(--black-title);
+  font-family: "Sniglet", cursive;
+}
+
+div.container div.container-principal div.menu #paragraph {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+div.container div.container-principal div.menu .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+div.container div.container-principal div.menu .buttons #get-started {
+  background: var(--yellow);
+  color: var(--background);
+  width: 300px;
+  height: 75.75px;
+  font-size: 32px;
+  border: 0px solid;
+  border-radius: 43px;
+  -webkit-transition: all 0.8;
+  transition: all 0.8;
+  cursor: pointer;
+}
+
+div.container div.container-principal div.menu .buttons #get-started:hover {
+  opacity: 0.8;
+}
+
+div.container div.container-principal div.menu .buttons #watch-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: var(--grey);
+  width: 300px;
+  height: 75.75px;
+  font-size: 32px;
+  border: 0px solid;
+  border-radius: 43px;
+  margin-left: 50px;
+  -webkit-transition: all 0.8;
+  transition: all 0.8;
+  cursor: pointer;
+}
+
+div.container div.container-principal div.menu .buttons #watch-video:hover {
+  opacity: 0.8;
+}
+
+div.container div.container-principal div.menu .buttons #watch-video img {
+  width: 100px;
+  height: 60.75px;
+}
+
+div.container div.container-principal div.menu .buttons #watch-video p {
+  font-size: 32px;
+  color: #000;
+  margin-right: 15px;
+}
+
+div.container div.container-principal div.perfil {
+  width: 40vw;
+  height: 100vh;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+div.container div.container-principal div.perfil .titulo-card p {
+  font-size: 24px;
+  width: 10vw;
+  font-family: "Nunito Sans", sans-serif;
+  margin-left: 100px;
+}
+
+div.container div.container-principal div.perfil div.star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #fff;
+  --black: #000;
+  --yellow: #fea700;
+  --grey: rgba(196, 196, 196, 0.5);
+  --black-title: rgba(0, 0, 0, 1);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--background);
+}
+
+div.container {
+  height: 100vh;
+  padding: 40px;
+
+  div.header {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+
+    a.logo {
+      text-decoration: none;
+      font-family: "Quando", serif;
+      line-height: 51px;
+      font-size: 32px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.377);
+      color: var(--black);
+      transition: all 0.8;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    div.top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "Roboto", sans-serif;
+      margin-right: 20px;
+      font-size: 30px;
+      width: 35vw;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.377);
+      color: var(--black);
+      transition: all 0.8;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      p {
+        display: flex;
+        margin: 24px;
+        cursor: pointer;
+
+        a {
+          color: var(--black);
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .icons-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 10vw;
+      height: 10vh;
+      transition: all 0.8;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      img.icons-search {
+        width: 30px;
+        height: 40px;
+        cursor: pointer;
+      }
+
+      img.icons-lupa {
+        width: 40px;
+        height: 50px;
+        cursor: pointer;
+      }
+    }
+
+    button.login {
+      width: 170.28px;
+      height: 65.75px;
+      font-size: 30px;
+      border: 0px solid;
+      border-radius: 14px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.377);
+      box-shadow: 0px 5.8125px 5.8125px rgba(0, 0, 0, 0.35);
+      background: var(--yellow);
+      color: var(--background);
+      transition: all 0.8;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  ///
+
+  div.container-principal {
+    display: flex;
+
+    div.menu {
+      display: flex;
+      flex: 1;
+      width: 40vw;
+      height: 560vh;
+      padding-left: 90px;
+      margin-top: 110px;
+
+      div.title {
+        font-size: 50px;
+        color: var(--black-title);
+        font-family: "Sniglet", cursive;
+      }
+
+      #paragraph {
+        font-family: "Nunito Sans", sans-serif;
+      }
+
+      .buttons {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+
+        #get-started {
+          background: var(--yellow);
+          color: var(--background);
+          width: 300px;
+          height: 75.75px;
+          font-size: 32px;
+          border: 0px solid;
+          border-radius: 43px;
+          transition: all 0.8;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+
+        #watch-video {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--grey);
+          width: 300px;
+          height: 75.75px;
+          font-size: 32px;
+          border: 0px solid;
+          border-radius: 43px;
+          margin-left: 50px;
+          transition: all 0.8;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.8;
+          }
+
+          img {
+            width: 100px;
+            height: 60.75px;
+          }
+
+          p {
+            font-size: 32px;
+            color: #000;
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+
+    div.perfil {
+      width: 40vw;
+      height: 100vh;
+      margin-left: 20px;
+      margin-top: 30px;
+
+      .titulo-card p {
+        font-size: 24px;
+        width: 10vw;
+        font-family: "Nunito Sans", sans-serif;
+        margin-left: 100px;
+      }
+
+      div.star {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+      }
+    }
+  }
+}
